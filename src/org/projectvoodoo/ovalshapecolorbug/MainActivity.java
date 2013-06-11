@@ -74,7 +74,7 @@ public class MainActivity extends Activity implements OnClickListener {
         TextView versionCredits = (TextView) findViewById(R.id.versionCredits);
         versionCredits.setText(getString(R.string.app_name) + " "
                 + Utils.getVersionMetas(this) + " by supercurio"
-                + "\nDevice: " + Build.FINGERPRINT);
+                + "\nDevice: " + Build.MODEL + ", " + Build.FINGERPRINT);
     }
 
     @Override
